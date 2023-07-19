@@ -8,9 +8,12 @@
 <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 
 </head>
-<body>
-
-
+<body style="background-color:white;">
+{%if name in friends%}
+<h1>{{name}} exists</h1>
+{%else%}
+<h1>{{name}} does not exist</h1>
+{%endif%}
 
 </body>
 </html>
